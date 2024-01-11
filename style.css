@@ -4,3 +4,31 @@
     box-sizing: border-box;
     font-family: 'Varela Round', sans-serif;
 }
+
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: red;
+}
+
+aside {
+    width: 10%;
+    height: 100vh;
+    background-color: blue;
+}
+
+main {
+    width: 90%;
+    height: 100vh;
+    background-color: yellow;
+}
+
+footer {
+    width: 100vw;
+    height: 100px;
+    background-color: green;
+}
+
+.flex {
+    display: flex;
+}

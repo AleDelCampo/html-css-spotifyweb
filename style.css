@@ -16,21 +16,24 @@ nav {
     background-color: rgba(0,0,0, 0.4);
     position: fixed;
     top:0;
-    left: ;
     overflow-y: scroll;
 }
 
 .button {
     width: 220px;
     height: 40px;
-    background-color: aqua;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 20px;
+    border-width: 1px;
+    color: white;
     position: absolute;
     top: 20px;
     right: 12%;
 }
 
 aside {
-    width: 80px;
+    width: 120px;
     height: 100vh;
     background-color: #000000;
 }
@@ -76,15 +79,37 @@ main {
 .square-container {
     flex-wrap: wrap;
     gap: 18px;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 .square {
-    max-width: 200px;
-    width: calc(100% / 2 - 16px / 2);
+    width: calc(100% / 2 - 20px / 2);
 }
 
 .album img {
     width: 100%;
+}
+
+.description {
+    text-align: center;
+}
+
+.title {
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.artist {
+    color: #707378;
+    margin-top: 10px;
+}
+
+.subtitle {
+    color: #707378;
+    margin-bottom: 20px;
 }
 
 .container-scroll {
@@ -95,6 +120,17 @@ main {
     font-size: 24px;
     color: white;
     font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.square-container-chronology {
+    flex-wrap: wrap;
+    gap: 18px;
+    padding-top: 30px;
 }
 
 .text {
@@ -102,7 +138,7 @@ main {
 }
 
 .album-spaces {
-    margin: 40px 0px 30px 0px;
+    margin-top: 40px;
 }
 
 .functions {
@@ -127,7 +163,7 @@ ul {
 }
 
 .container {
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 footer {

@@ -40,7 +40,6 @@ nav {
 
 aside {
     width: 50px;
-    height: 100vh;
     background-color: #000000;
 }
 
@@ -51,6 +50,7 @@ aside {
 .aside-container {
     flex-direction: column;
     align-items: center;
+    height: calc(100vh - 90px);
     gap: 10px;
     padding-top: 6px;
 }
@@ -59,7 +59,7 @@ aside {
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: calc(70vh - 90px);
+    top: calc(70vh - 60px);
     gap: 20px;
 }
 
@@ -231,7 +231,7 @@ footer {
     .button {
         right: 220px;
     }
-    
+
     .responsive-container {
         width: 100%;
         padding-left: 20px;
@@ -247,11 +247,85 @@ footer {
     .aside-icons-responsive {
         width: 120px;
         color: white;
-        text-align: left;
-        
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .playlist-icon {
+        color: #707378;
+        font-size: 40px;
+    }
+
+    article {
+        color: #707378;
+        align-self: center;
+        font-size: 12px;
+        font-weight: bold;
+        text-wrap: nowrap;
+    }
+
+    .playlist-title {
+        color: white;
+        padding-bottom: 10px;
+    }
+
+    .playlist {
+        gap: 10px;
+    }
+
+    .new-playlists {
+        color: white;
+        line-height: 34px;
+        font-size: 12px;
+    }
+
+    .aside-bottom-container-resp {
+        color: white;
+        font-weight: bold;
+        flex-direction: column;
+        position: absolute;
+        bottom: 100px;
+        left: 20px;
+        gap: 10px;
+    }
+
+    .aside-bottom-container-resp div:nth-child(1){
+        color: #808080;
+        font-size: small;
+    }
+    
+    .fa-user-circle {
+        font-size: 24px;
+    }
+
+    .user {
+        gap: 10px;
+        align-items: center;
+        text-wrap: nowrap;
+    }
+
+    .install{
+        gap: 10px;
+        align-items: center;
+        text-wrap: nowrap;
+        border-bottom: 2px solid #808080;
+        padding-bottom: 10px;
+        width: 88%;
+    }
+}
+
+@media screen and (min-width: 868px) {
+
+    .square {
+        width: calc(100% / 4 - 28px / 2);
     }
 
 }
 
+@media screen and (min-width: 1440px) {
 
+    .square {
+        width: calc(100% / 6 - 30px / 2);
+    }
 
+}

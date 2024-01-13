@@ -32,6 +32,12 @@ nav {
     right: 12%;
 }
 
+.button:hover {
+    color: #adff2f;
+    transform: scale(140%);
+    transition-duration: 2s;
+}
+
 aside {
     width: 120px;
     height: 100vh;
@@ -65,6 +71,27 @@ aside {
 .aside-bottom-container div:nth-child(2){
     color: #808080;
     font-size: 24px;
+}
+
+ul a {
+    color: #707378;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}   
+
+ul li {
+    opacity: 0.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul a:hover {
+    padding-bottom: 4px;
+    background:linear-gradient(#adff2f,#adff2f) bottom no-repeat;
+    background-size:50% 3px;
 }
 
 main {
@@ -162,21 +189,6 @@ main::-webkit-scrollbar-thumb {
     flex-wrap: wrap;
     justify-content: center;
     gap: 26px;
-}
-
-ul a {
-    color: #707378;
-    font-size: 12px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-ul li {
-    opacity: 0.6;
-}
-
-ul {
-    list-style-type: none;
 }
 
 .container {

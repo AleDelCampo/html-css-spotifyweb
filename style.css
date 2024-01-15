@@ -218,8 +218,7 @@ footer {
     max-width: 220px;
     color: #707378;
     gap: 20px;
-    align-items: center; 
-    justify-content:    ;   
+    align-items: center;  
 }
 
 .left .name {
@@ -491,6 +490,15 @@ footer {
     .track-time {
         width: 220px;
     }
+
+    .new-playlists {
+        max-height: 340px;
+        overflow-y: auto;
+        
+    }
+
+    .new-playlists::-webkit-scrollbar {
+        display: none;
 
 }
 

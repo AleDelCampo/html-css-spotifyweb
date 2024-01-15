@@ -210,44 +210,69 @@ footer {
     align-items: center;
     height: 100%;
     width: 100%;
+    padding: 10px;
 }
 
 .left {
-    width: 25%;
-    justify-content: left;
+    width: 240px;
     color: #707378;
     gap: 20px;
+    align-items: center;    
+}
+
+.left .name {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.left .song {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.song-name {
+    line-height: 12px;
+    gap: 10px;
+    align-items: center;
+    width: 60%;
 }
 
 .player-cover {
-    
+    width: 26px;
+    height: 26px;
 }
 
-.player-cover img {
-    width: 40px;
-    height: 40px;
+.player-cover img{
+    width: 26px;
+    height: 26px;
+}
+
+.ciao {
+    width: 100%;
+    flex-direction: column;
+    color: white;
 }
 
 .center {
-    width: 5%;
     justify-content: center;
-    color: white;
+    align-items: center;
     gap: 20px;
 }
 
 .player {
-
+    font-size: 35px;
 }
 
 .right {
-    width: 25%;
+    width: 240px;
     justify-content: right;
     color: white;
     gap: 20px;  
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639px) {
     .responsive-container{
         display: none;
     }
@@ -365,6 +390,29 @@ footer {
         width: 150px;
     }
 
+    .player-cover {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .player-cover img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .song {
+        text-wrap: nowrap;
+    }
+
+    .songs {
+        display: flex;
+        gap: 2px;
+    }
+
+    .like-archive {
+        padding-left: 20px;
+    }
+
 }
 
 @media screen and (min-width: 868px) {
@@ -373,6 +421,10 @@ footer {
         width: calc(100% / 4 - 28px / 2);
     }
 
+    .like-archive {
+        display: flex;
+        gap: 10px;
+    }
 }
 
 @media screen and (min-width: 1440px) {

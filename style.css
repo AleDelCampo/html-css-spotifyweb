@@ -214,10 +214,12 @@ footer {
 }
 
 .left {
-    width: 240px;
+    width: 20%;
+    max-width: 220px;
     color: #707378;
     gap: 20px;
-    align-items: center;    
+    align-items: center; 
+    justify-content:    ;   
 }
 
 .left .name {
@@ -248,8 +250,8 @@ footer {
     height: 26px;
 }
 
-.ciao {
-    width: 100%;
+.center-cnt {
+    width: 60%;
     flex-direction: column;
     color: white;
 }
@@ -265,12 +267,85 @@ footer {
 }
 
 .right {
-    width: 240px;
+    width: 20%;
     justify-content: right;
     color: white;
     gap: 20px;  
 }
 
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.track-time {
+    width: 200px;
+    padding-top: 4px;
+}
+
+.track {
+    width: 100%;
+    position: relative;
+    align-self: center;
+}
+
+.track::before {
+    content: '';
+    height: 4px;
+    width: 100%;
+    background: #D9D9D9;
+    opacity: 0.3;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.track::after { 
+    content: '';
+    height: 4px;
+    width: 40%;
+    display: block;
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+
+.time {
+    opacity: 0.7;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.volume-bar {
+    width: 80px;
+}
+
+.volume {
+    width: 100%;
+    position: relative;
+    align-self: center;
+}
+
+.volume::before {
+    content: '';
+    height: 4px;
+    width: 100%;
+    background: #D9D9D9;
+    opacity: 0.3;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.volume::after { 
+    content: '';
+    height: 4px;
+    width: 68%;
+    display: block;
+    background: #D9D9D9;
+    border-radius: 10px;
+}
 
 @media screen and (max-width: 639px) {
     .responsive-container{
@@ -413,9 +488,13 @@ footer {
         padding-left: 20px;
     }
 
+    .track-time {
+        width: 220px;
+    }
+
 }
 
-@media screen and (min-width: 868px) {
+@media screen and (min-width: 878px) {
 
     .square {
         width: calc(100% / 4 - 28px / 2);
@@ -425,12 +504,22 @@ footer {
         display: flex;
         gap: 10px;
     }
+
+    .track-time {
+        width: 340px;
+    }
+
 }
 
 @media screen and (min-width: 1440px) {
 
     .square {
         width: calc(100% / 6 - 30px / 2);
+    }
+
+    .track-time {
+        width: 500px;
+        gap:10px;
     }
 
 }
